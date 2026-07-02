@@ -1,0 +1,16 @@
+# Network interface to capture packets from.
+interface = "eth0"
+
+# Aggregation interval in minutes.
+interval_minutes = 60
+
+# Directory where CSV files will be written.
+output_directory = "./logs"
+
+# Networks considered "local".
+local_networks = [
+    "10.0.0.0/8",
+    "172.16.0.0/12",
+    "192.168.0.0/16",
+    "fd00::/8"
+]
